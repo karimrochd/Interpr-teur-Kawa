@@ -1,0 +1,25 @@
+class point {
+	attribute int x;
+	attribute int y;
+}
+
+main {
+  //Création d'objets
+  a = new point;
+  b = new point;
+
+  //Modification d'attributs
+  b.x = 6;
+  a.x = 4;
+  print(a.x);
+
+  //Remplacement d'attributs existants
+  a.x = 7;
+  b.x = 0;
+  print(a.x);
+  print(b.x);
+
+  //Remplacement d'attributs par l'attribut d'un autre objet
+  a.x = b.x;
+  print(a.x);
+}

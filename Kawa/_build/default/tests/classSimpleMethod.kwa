@@ -1,0 +1,37 @@
+var point p;
+
+class point {
+  attribute int x;
+  attribute int y;
+
+  method int somme() {
+    return this.x + this.y;
+  }
+
+  method void affiche(int a, bool b, int c){
+    print(a);
+    print(b);
+    print(c);
+  }
+
+  method void printX(){
+    print(this.x);
+  }
+
+  method void setX(int a, int b){
+    this.x = b;
+  }
+
+}
+
+main {
+  p = new point;
+  p.x = 4;
+  p.y = 5;
+  p.printX();
+  print(p.y);
+  print(p.somme());
+  p.setX(10, 100);
+  p.printX();
+  p.affiche(4+1,true,-1);
+}

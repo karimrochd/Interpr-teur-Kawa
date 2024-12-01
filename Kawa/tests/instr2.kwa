@@ -1,0 +1,53 @@
+ 
+var int a;
+var int b;
+var int n;
+var int acc;
+var bool flag;
+
+main {
+  // Test initial
+  a = 2;
+  n = 9;
+  acc = 1;
+  flag = true;
+
+  // Boucle while avec une condition
+  while (n != 0) {
+    if ((n % 2) != 0) {
+      acc = a * acc;
+    } else {
+      // Bloc else vide
+    }
+    a = a * a;
+    n = n / 2;
+  }
+  print(acc);
+
+  // Test avec des opérations arithmétiques supplémentaires
+  b = 5;
+
+  // Utilisation d'une condition booléenne
+  if (flag) {
+    acc = acc / 2;
+  } else {
+    acc = acc * 2;
+  }
+  print(acc);
+
+  // Conditions imbriquées
+  if (a > b) {
+    if (n <= 3) {
+      acc = a;
+    } else {
+      acc = b;
+    }
+  } else {
+    acc = n;
+  }
+  print(acc);
+
+  // Utilisation de l'opérateur modulo
+  acc = a % b;
+  print(acc);
+}

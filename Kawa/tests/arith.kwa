@@ -1,0 +1,13 @@
+main {
+  print(10 + 2 * 3);            
+  print((10 + 2) * 3);          
+//  print(50 / 5 - 3);            
+  print(4 * (2 + 3));           
+  print(15 % 4);                             
+  print(-3 * -2);               
+  print((8 / 4) * (2 + 3));     
+  print(20 / (4 + 1));
+
+  //La division est arrondie à 0 lorsqu'elle se situe entre 0 et 1
+  print(4/8);               
+}
